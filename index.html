@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北海道旅遊手冊｜手機友善互動導覽</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#content">跳到主要內容</a>
+    <header class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__eyebrow">2025 北海道五日深度旅</p>
+            <h1 class="hero__title">第一次跟團也安心，帶著冒險心出發！</h1>
+            <p class="hero__subtitle">行前準備 × 五日行程亮點 × 餐食指南 × 自由探索提案 × 導遊貼心提醒</p>
+            <div class="hero__actions">
+                <a href="#pre-trip" class="btn btn--primary">行前必做清單</a>
+                <a href="#day-1" class="btn btn--ghost">立即看 Day 1</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="timeline" aria-label="行程導覽">
+        <button class="timeline__toggle" aria-expanded="false" aria-controls="timeline-nav">行程導覽</button>
+        <div class="timeline__items" id="timeline-nav">
+            <a href="#pre-trip" class="timeline__item">行前準備</a>
+            <a href="#day-1" class="timeline__item">Day 1</a>
+            <a href="#day-2" class="timeline__item">Day 2</a>
+            <a href="#day-3" class="timeline__item">Day 3</a>
+            <a href="#day-4" class="timeline__item">Day 4</a>
+            <a href="#day-5" class="timeline__item">Day 5</a>
+        </div>
+    </nav>
+
+    <main id="content">
+        <section id="pre-trip" class="section">
+            <div class="section__header">
+                <h2>行前準備：穩扎穩打的旅前三階段</h2>
+                <p>從證件、財務、通訊到裝備與心態，一次掌握必備要點，再附上出發前24小時終極檢查表。</p>
+                <div class="section__actions">
+                    <button class="action-btn" data-expand="pretrip">全部展開</button>
+                    <button class="action-btn" data-collapse="pretrip">全部收合</button>
+                </div>
+            </div>
+            <div class="grid">
+                <article class="card" data-group="pretrip">
+                    <header class="card__header">
+                        <p class="card__eyebrow">Phase 1</p>
+                        <h3>核心任務：出發前一週必做</h3>
+                    </header>
+                    <details open>
+                        <summary>證件與數位通關</summary>
+                        <ul class="checklist">
+                            <li><strong>護照檢查：</strong>全體旅伴（含阿萌）效期至少六個月。</li>
+                            <li><strong>Visit Japan Web：</strong>預先填寫資料並截圖入境審查、海關申報 QR Code，建議建立專屬相簿。</li>
+                            <li><strong>文件備份：</strong>護照影本、電子機票、旅行社合約、住宿資訊、旅遊保險單拍照備份於手機與雲端。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>金流準備</summary>
+                        <ul class="checklist">
+                            <li><strong>日幣現金：</strong>台灣提前兌換，保留導遊司機小費（建議每日每人¥300）。</li>
+                            <li><strong>信用卡：</strong>準備兩張不同發卡組織卡片（VISA/Master/JCB），提前開通海外刷卡功能。</li>
+                            <li><strong>零錢包：</strong>1/5/10/50/100/500 日圓硬幣體積大，自備好收納的零錢包。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>通訊與網路</summary>
+                        <ul class="checklist">
+                            <li><strong>eSIM：</strong>出發前掃描 QR Code 安裝，落地啟用。</li>
+                            <li><strong>實體 SIM：</strong>台灣購買或日本機場購買皆可。</li>
+                            <li><strong>Wi-Fi 分享器：</strong>多人共享方便但需額外充電。</li>
+                            <li><strong>電信漫遊：</strong>最省事但費用較高，評估需求。</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article class="card" data-group="pretrip">
+                    <header class="card__header">
+                        <p class="card__eyebrow">Phase 2</p>
+                        <h3>裝備整備：洋蔥式輕量打包</h3>
+                    </header>
+                    <details open>
+                        <summary>穿搭策略</summary>
+                        <ul>
+                            <li><strong>內層：</strong>吸濕排汗短袖或薄長袖上衣。</li>
+                            <li><strong>中層：</strong>法蘭絨襯衫、薄毛衣或刷毛外套。</li>
+                            <li><strong>外層：</strong>防風防潑水外套、輕便羽絨。</li>
+                            <li><strong>下身：</strong>舒適長褲，怕冷者加發熱褲。</li>
+                            <li><strong>鞋子：</strong>防水好走的運動鞋/休閒鞋。</li>
+                            <li><strong>配件：</strong>薄圍巾、毛帽、手套應對早晚溫差。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>個人常備品</summary>
+                        <ul>
+                            <li><strong>常備藥：</strong>慢性病藥物、感冒/止痛/腸胃/暈車藥、OK繃、阿萌專用藥與耳溫槍。</li>
+                            <li><strong>盥洗保養：</strong>自備習慣用品，北海道乾燥需加強保濕。</li>
+                            <li><strong>防曬・折疊傘：</strong>秋季紫外線仍強，備晴雨兩用傘。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>電子產品與其他</summary>
+                        <ul>
+                            <li>行動電源、充電器、Type A 插頭（與台灣相同）、延長線。</li>
+                            <li>空水瓶、購物袋、阿萌娛樂道具（玩具、畫筆、影片平板）。</li>
+                        </ul>
+                    </details>
+                </article>
+
+                <article class="card" data-group="pretrip">
+                    <header class="card__header">
+                        <p class="card__eyebrow">Phase 3</p>
+                        <h3>心法建立：團體默契與安全</h3>
+                    </header>
+                    <details open>
+                        <summary>團隊默契</summary>
+                        <ul>
+                            <li>守時：遵守集合時間地點，影響全團節奏。</li>
+                            <li>保持彈性：行程固定，放寬心享受旅程。</li>
+                            <li>尊重導遊：健康、協助等需求請即時告知。</li>
+                            <li>小費文化：依旅行社說明準備導遊司機小費。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>安全心法</summary>
+                        <ul>
+                            <li>隨身小背包：水瓶、濕紙巾、口罩、小毛巾。</li>
+                            <li>防硫磺：地獄谷硫磺味重，備口罩舒緩。</li>
+                            <li>時間控制：「三心二意」記好集合通知與房號、座位。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>出發前 24 小時終極檢查</summary>
+                        <ul class="ticklist">
+                            <li>[ ] 證件、QR Code、備份文件齊全。</li>
+                            <li>[ ] 手機、行動電源、相機充飽電。</li>
+                            <li>[ ] 查詢札幌與道南最新天氣，調整衣物。</li>
+                            <li>[ ] 行李秤重符合航空公司規定。</li>
+                            <li>[ ] 告知家人或緊急聯絡人完整行程與聯絡方式。</li>
+                        </ul>
+                    </details>
+                </article>
+            </div>
+        </section>
+
+        <section id="day-1" class="section">
+            <header class="section__header">
+                <h2>Day 1｜支笏湖・登別地獄谷・溫泉夜漫遊</h2>
+                <p>從桃園啟程，踏入北海道的第一天：晨霧湖景、火山秘境、鬼魅溫泉街與溫泉旅宿。</p>
+            </header>
+            <article class="day-card" data-day="1">
+                <div class="day-card__intro">
+                    <span class="day-card__badge">導遊開場</span>
+                    <p>抵達新千歲後直奔支笏湖與登別，傍晚漫步極樂通商店街，首次跟團的緊張與期待在溫泉中舒緩。</p>
+                </div>
+                <div class="day-card__content">
+                    <details open>
+                        <summary>亮點景點與玩法</summary>
+                        <div class="highlights">
+                            <article>
+                                <h3>支笏湖｜火山孕育的不凍湖</h3>
+                                <ul>
+                                    <li>火山口湖最深 363 公尺、透明度 25 米，終年不結冰。</li>
+                                    <li>沿湖散步、租腳踏船，晨間薄霧最夢幻。</li>
+                                    <li>必拍：碼頭取景惠庭火山與湖面倒影。</li>
+                                    <li>小秘密：嚐試「支笏湖藍」霜淇淋、鹽烤姬鱒。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>登別地獄谷｜鬼斧神工的溫泉源頭</h3>
+                                <ul>
+                                    <li>火山爆裂口形成，硫磺蒸氣與茶褐岩壁構成地獄景象。</li>
+                                    <li>步道連接展望台、鐵泉池、大湯沼川天然足湯。</li>
+                                    <li>最佳拍攝：午後斜射光染金紅岩壁，入口鬼娃娃雕像合影。</li>
+                                    <li>伴手禮：地獄谷黑面膜、鬼傳說啤酒、閻魔拉麵包。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>登別溫泉街｜閻魔堂變臉秀</h3>
+                                <ul>
+                                    <li>極樂通商店街燈籠、鬼元素滿點，整點觀賞閻魔變臉審判秀。</li>
+                                    <li>卡位秘訣：提前 5 分鐘站在正前方，連拍捕捉變臉瞬間。</li>
+                                    <li>小吃：溫泉饅頭、鬼之霜淇淋、藤崎芥末園醬菜。</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>餐食攻略</summary>
+                        <ul>
+                            <li><strong>午餐：</strong>機上簡餐，建議登機前補充點心，多喝水。</li>
+                            <li><strong>晚餐：</strong>入住萬世閣，享用和洋自助或會席料理。鎖定長腳蟹、刺身、北海道牛乳布丁。</li>
+                            <li><strong>餐後：</strong>換浴衣散步溫泉街，嚐溫泉玉子＋牛奶冰淇淋。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>自由時間藍圖</summary>
+                        <p>路線：飯店 → 極樂通商店街 → 閻魔堂 → 足湯公園 → 飯店（步行約 20 分鐘）。</p>
+                        <ul>
+                            <li>紀念品：大黑屋民藝店鬼怪造型冰箱貼、登別限定扭蛋。</li>
+                            <li>足湯：自備小毛巾，夜間燈光映照特別療癒。</li>
+                            <li>美食：鬼柴棒、溫泉蒸布丁、便利商店限定鬼娃娃杯緣子扭蛋。</li>
+                            <li>安全：夜間降溫明顯，地面溼滑注意腳步。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>導遊貼心提醒</summary>
+                        <ul class="reminders">
+                            <li><strong>穿著：</strong>洋蔥式層次，支笏湖平坦、地獄谷木棧道需防滑鞋。</li>
+                            <li><strong>隨身物：</strong>小背包、水瓶、口罩、小毛巾；硫磺味濃可戴口罩緩解。</li>
+                            <li><strong>時間觀念：</strong>凌晨 03:50 桃園集合；抵達後行程緊湊，務必準時。</li>
+                            <li><strong>溫泉禮儀：</strong>入湯前徹底淋浴、毛巾不入池，10 分鐘休息補水。</li>
+                            <li><strong>安全：</strong>巴士山路多，繫安全帶；硫磺氣不適即刻告知導遊。</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+        </section>
+
+        <section id="day-2" class="section">
+            <header class="section__header">
+                <h2>Day 2｜尼克斯海洋公園・昭和新山熊牧場・洞爺湖花火</h2>
+                <p>童話海洋城堡、近距離與棕熊互動、洞爺湖畔煙火盛宴，夜宿湖景溫泉旅館。</p>
+            </header>
+            <article class="day-card" data-day="2">
+                <div class="day-card__intro">
+                    <span class="day-card__badge">導遊開場</span>
+                    <p>海洋世界、動物互動與湖畔浪漫串起全天亮點，夜晚洞爺湖長跑花火點亮天空。</p>
+                </div>
+                <div class="day-card__content">
+                    <details open>
+                        <summary>亮點景點與玩法</summary>
+                        <div class="highlights">
+                            <article>
+                                <h3>登別尼克斯海洋公園</h3>
+                                <ul>
+                                    <li>仿北歐城堡建築、水晶塔水族箱、北海道首座海底隧道。</li>
+                                    <li>企鵝大遊行 10:45/14:15，前排卡位最佳。</li>
+                                    <li>表演：海獅警察秀、海豚特技，觸摸池體驗。</li>
+                                    <li>必買：企鵝娃娃、城堡圖樣毛巾、海豚鑰匙圈。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>昭和新山熊牧場</h3>
+                                <ul>
+                                    <li>1943 年火山隆起，現飼養百餘隻北海道棕熊。</li>
+                                    <li>餵食觀景台贈熊點心，熊會舉掌討食。</li>
+                                    <li>小熊幼稚園看熊寶互動，出口限定木雕熊、馬油乳霜。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>洞爺湖展望台 & 花火大會</h3>
+                                <ul>
+                                    <li>展望台俯瞰中島、昭和新山、有珠火山。</li>
+                                    <li>幸運之鐘步道敲響愛情鐘聲。</li>
+                                    <li>20:45 長跑花火，遊艇沿湖施放 20 分鐘。</li>
+                                    <li>拍攝：煙火倒映湖面，錄影或剪影照皆迷人。</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>餐食攻略</summary>
+                        <ul>
+                            <li><strong>早餐：</strong>登別飯店和洋自助，補充蛋白質與乳製品。</li>
+                            <li><strong>午餐：</strong>日式壽喜燒吃到飽，蔬菜先煮釋甜味，肉片 5-7 秒入口最佳。</li>
+                            <li><strong>晚餐：</strong>洞爺湖飯店百匯或會席，必嚐長腳蟹、現烤扇貝、成吉思汗烤肉。</li>
+                            <li><strong>備案：</strong>如改自理，可在尼克斯園內或洞爺湖溫泉街品嚐在地餐館。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>自由時間藍圖</summary>
+                        <ul>
+                            <li>飯店湖畔散步道 → 夕陽廣場 → 櫻木街小吃巷。</li>
+                            <li>小吃：炸馬鈴薯可樂餅、醬油團子、哈密瓜冰淇淋聖代。</li>
+                            <li>收藏：扭蛋販售洞爺湖限定公仔。</li>
+                            <li>安全：湖畔夜間風大，穿外套、避免靠近湖邊。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>導遊貼心提醒</summary>
+                        <ul class="reminders">
+                            <li><strong>衣著：</strong>12℃-15℃ 洞爺湖夜晚涼，備圍巾帽子。</li>
+                            <li><strong>隨身：</strong>¥100 零錢購買餵食飼料、面紙防濺水。</li>
+                            <li><strong>動物禮儀：</strong>不使用閃光、餵食僅限園區提供食物。</li>
+                            <li><strong>乘車：</strong>山路多，暈車者提前服藥坐前排。</li>
+                            <li><strong>花火：</strong>20:30 飯店大廳集合，煙火期間遵守管制。</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+        </section>
+
+        <section id="day-3" class="section">
+            <header class="section__header">
+                <h2>Day 3｜積丹神威岬・小樽浪漫・北海道神宮</h2>
+                <p>積丹藍海岸、小樽運河與玻璃工藝、札幌夜生活，一日收藏海岸線到都市風情。</p>
+            </header>
+            <article class="day-card" data-day="3">
+                <div class="day-card__intro">
+                    <span class="day-card__badge">導遊開場</span>
+                    <p>從海岬傳說到港都浪漫，再到札幌夜間自由探索，行程節奏充實而多元。</p>
+                </div>
+                <div class="day-card__content">
+                    <details open>
+                        <summary>亮點景點與玩法</summary>
+                        <div class="highlights">
+                            <article>
+                                <h3>積丹半島神威岬</h3>
+                                <ul>
+                                    <li>770 公尺步道沿懸崖通往燈塔，欣賞「積丹藍」海景。</li>
+                                    <li>傳說 Charanka 化身孤礁，昔日禁止女性登岬。</li>
+                                    <li>必吃：積丹藍霜淇淋、海膽料理（夏季當季）。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>小樽運河與童話十字路口</h3>
+                                <ul>
+                                    <li>紅磚倉庫、煤氣燈映照，黃昏夜景最浪漫。</li>
+                                    <li>北一硝子館煤油燈咖啡廳、蒸汽鐘整點噴煙。</li>
+                                    <li>音樂盒堂 DIY 組裝專屬音樂盒，收藏玻璃藝品。</li>
+                                    <li>銀之鐘咖啡：挑杯自選骨瓷杯帶回當紀念。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>北海道神宮 & 札幌免稅店</h3>
+                                <ul>
+                                    <li>遵循二禮二拍手一禮參拜，購買御守、朱印帳。</li>
+                                    <li>免稅店一次補齊土產：白色戀人、Royce、生鮮點心。</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>餐食攻略</summary>
+                        <ul>
+                            <li><strong>早餐：</strong>洞爺湖飯店和洋自助，補充蔬菜與溫泉蛋。</li>
+                            <li><strong>午餐：</strong>小樽長腳蟹＋涮涮鍋吃到飽，蟹腳 10 秒即食，搭配柚子醋。</li>
+                            <li><strong>晚餐：</strong>札幌自理，可選味噌拉麵、海鮮居酒屋、成吉思汗烤肉、湯咖哩等。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>自由時間藍圖（札幌夜行）</summary>
+                        <ul>
+                            <li>路線：飯店 → 薄野十字路口 → 狸小路 1-6 丁目 → NORBESA 摩天輪 → 飯店。</li>
+                            <li>購物：唐吉軻德 24 小時、藥妝店、動漫專區。</li>
+                            <li>小吃：章魚燒、可麗餅、Lucky Pierrot 漢堡。</li>
+                            <li>夜景：搭摩天輪俯瞰札幌燈火。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>導遊貼心提醒</summary>
+                        <ul class="reminders">
+                            <li><strong>穿著：</strong>海岬風大須防風外套與好走鞋。</li>
+                            <li><strong>時間：</strong>神威岬步道約 60-80 分鐘，務必準時集合。</li>
+                            <li><strong>城市禮儀：</strong>垃圾自備袋、不拍他人正臉、神宮內保持安靜。</li>
+                            <li><strong>健康：</strong>海風易頭痛，及時補水；暈車者提前用藥。</li>
+                            <li><strong>財物：</strong>札幌夜間活動多，貴重物品分散保管。</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+        </section>
+
+        <section id="day-4" class="section">
+            <header class="section__header">
+                <h2>Day 4｜三井 Outlet 北廣島・札幌啤酒博物館・札幌夜生活續篇</h2>
+                <p>重點血拼＋啤酒文化之旅，晚上回札幌享受自由夜逛與締め甜點。</p>
+            </header>
+            <article class="day-card" data-day="4">
+                <div class="day-card__intro">
+                    <span class="day-card__badge">導遊開場</span>
+                    <p>室內購物不怕天氣，下午走進紅磚啤酒博物館，夜裡再度交給狸小路與札幌夜景。</p>
+                </div>
+                <div class="day-card__content">
+                    <details open>
+                        <summary>亮點景點與玩法</summary>
+                        <div class="highlights">
+                            <article>
+                                <h3>Mitsui Outlet Park 札幌北廣島</h3>
+                                <ul>
+                                    <li>超過 170 品牌，提供免稅服務與旅客折價券。</li>
+                                    <li>推薦路線：運動戶外 → 精品 → 北海道 LOCO FARM VILLAGE 特產。</li>
+                                    <li>美食街必吃：松尾成吉思汗蓋飯、十勝豚丼、六花亭甜點。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>札幌啤酒博物館</h3>
+                                <ul>
+                                    <li>1890 年紅磚酒廠改建，展示釀造歷史與設備。</li>
+                                    <li>Star Hall 試飲限定札幌 Classic、開拓使啤酒、黑拉格。</li>
+                                    <li>必拍：紅磚建築＋煙囪、巨型糖化釜、啤酒桶裝置。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>狸小路夜逛再進化</h3>
+                                <ul>
+                                    <li>專攻尚未買到的伴手禮、甜點、串燒。</li>
+                                    <li>嘗試締め Parfait（Parfaiteria Pal 等），體驗札幌宵夜文化。</li>
+                                    <li>若想夜景，可改前往大通公園、札幌電視塔觀景台。</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>餐食攻略</summary>
+                        <ul>
+                            <li><strong>早餐：</strong>飯店自助，建議補充咖哩飯、北海道牛奶。</li>
+                            <li><strong>午餐：</strong>Outlet 美食街，自行選擇味噌拉麵、旭川拉麵、十勝豬丼、成吉思汗飯等。</li>
+                            <li><strong>晚餐：</strong>札幌自由搭配：咖哩拉麵、湯咖哩、海鮮市場、串燒、蟹本家豪華套餐。</li>
+                            <li><strong>宵夜：</strong>體驗締め甜點或便利商店限定飲料。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>導遊貼心提醒</summary>
+                        <ul class="reminders">
+                            <li><strong>購物策略：</strong>穿好脫的鞋、自備環保袋、護照方便免稅。</li>
+                            <li><strong>集合：</strong>Outlet 停留約 3 小時，務必準時至指定出入口。</li>
+                            <li><strong>啤酒館：</strong>地面濕滑注意腳步，未成年人勿靠近試飲吧台。</li>
+                            <li><strong>行李：</strong>旅程接近尾聲，晚間整理戰利品、預估托運重量。</li>
+                            <li><strong>安全：</strong>札幌夜間仍注意陌生店家招攬，結伴同行。</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+        </section>
+
+        <section id="day-5" class="section">
+            <header class="section__header">
+                <h2>Day 5｜返程日與新千歲機場探險</h2>
+                <p>道別北海道：最後購物、品嚐拉麵道場，帶著滿滿戰利品與回憶回家。</p>
+            </header>
+            <article class="day-card" data-day="5">
+                <div class="day-card__intro">
+                    <span class="day-card__badge">導遊開場</span>
+                    <p>整理行囊後前往新千歲機場，拉麵道場、巧克力世界與卡通主題樂園，為旅程畫下完美句點。</p>
+                </div>
+                <div class="day-card__content">
+                    <details open>
+                        <summary>機場亮點與玩法</summary>
+                        <div class="highlights">
+                            <article>
+                                <h3>新千歲機場探索</h3>
+                                <ul>
+                                    <li>哆啦 A 夢空中樂園、Hello Kitty Happy Flight 主題區。</li>
+                                    <li>Royce 巧克力世界：參觀製程、買限定巧克力。</li>
+                                    <li>拉麵道場十家名店最後衝刺，在地口味一次補齊。</li>
+                                    <li>機場溫泉（視時間）：1250 日圓起，舒緩旅程疲勞。</li>
+                                </ul>
+                            </article>
+                            <article>
+                                <h3>返台流程</h3>
+                                <ul>
+                                    <li>虎航 IT235 12:05 起飛，15:20 抵達桃園。</li>
+                                    <li>注意免稅商品封袋不得拆封，香菸酒類遵守台灣入境限額。</li>
+                                    <li>飛行時多喝水、適度走動，降落後確認行李完好。</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>餐食攻略</summary>
+                        <ul>
+                            <li><strong>早餐：</strong>札幌飯店簡餐，檢查房間避免遺漏物品。</li>
+                            <li><strong>午餐：</strong>機上套餐（照燒雞或咖哩飯），可額外購買虎航特色餐或自備點心。</li>
+                            <li><strong>抵達後：</strong>回家享用久違的台灣味，與家人分享北海道伴手禮。</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>導遊貼心提醒</summary>
+                        <ul class="reminders">
+                            <li><strong>退房：</strong>房卡交還，公共衛生用品勿帶走，檢查插座與抽屜。</li>
+                            <li><strong>行李重量：</strong>托運上限 20kg，超重需現場加購。</li>
+                            <li><strong>安檢：</strong>筆電、行動電源須單獨過檢，液體遵守規定。</li>
+                            <li><strong>飛行舒適：</strong>起降咀嚼口香糖、攜帶保濕用品，必要時用頸枕休息。</li>
+                            <li><strong>入境台灣：</strong>善用自動通關，留意免稅免量，抵達後回報旅行社滿意度。</li>
+                        </ul>
+                    </details>
+                </div>
+            </article>
+        </section>
+
+        <section class="section section--accent">
+            <header class="section__header">
+                <h2>快速檢視：五日行程重點一覽</h2>
+                <p>用表格快速比對每日景點、餐食與住宿安排，方便分享給同行旅伴。</p>
+            </header>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>主要景點</th>
+                            <th>餐食亮點</th>
+                            <th>住宿</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Day 1<br>9/28（日）</td>
+                            <td>支笏湖、登別地獄谷、溫泉街閻魔秀</td>
+                            <td>機上簡餐、登別萬世閣自助/會席</td>
+                            <td>登別溫泉旅館（萬世閣）</td>
+                        </tr>
+                        <tr>
+                            <td>Day 2<br>9/29（一）</td>
+                            <td>尼克斯海洋公園、昭和新山熊牧場、洞爺湖花火</td>
+                            <td>飯店早餐、壽喜燒吃到飽、洞爺湖飯店百匯</td>
+                            <td>洞爺湖溫泉旅館（湖景房）</td>
+                        </tr>
+                        <tr>
+                            <td>Day 3<br>9/30（二）</td>
+                            <td>神威岬、小樽運河、北一硝子、北海道神宮、札幌夜行</td>
+                            <td>飯店早餐、長腳蟹鍋吃到飽、札幌自理美食</td>
+                            <td>札幌市中心飯店（Travelodge 札幌薄野）</td>
+                        </tr>
+                        <tr>
+                            <td>Day 4<br>10/1（三）</td>
+                            <td>三井 Outlet、札幌啤酒博物館、狸小路續攤</td>
+                            <td>飯店早餐、Outlet 美食街、札幌自由晚餐</td>
+                            <td>札幌市中心飯店（續住）</td>
+                        </tr>
+                        <tr>
+                            <td>Day 5<br>10/2（四）</td>
+                            <td>新千歲機場探索、返台航班</td>
+                            <td>飯店早餐、機上套餐</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <header class="section__header">
+                <h2>旅程加分秘訣</h2>
+                <p>實用貼士一次收藏，讓首次跟團也能游刃有餘。</p>
+            </header>
+            <div class="tips-grid">
+                <article class="tip">
+                    <h3>隨身必備打包清單</h3>
+                    <ul>
+                        <li>護照、Visit Japan QR Code、旅平險保單</li>
+                        <li>日圓現金＋雙幣信用卡＋零錢包</li>
+                        <li>口罩、濕紙巾、小毛巾、保濕用品</li>
+                        <li>行動電源、延長線、旅用插頭、相機</li>
+                        <li>摺疊傘、防曬乳、暖暖包（備用）</li>
+                    </ul>
+                </article>
+                <article class="tip">
+                    <h3>團體旅遊守則</h3>
+                    <ul>
+                        <li>手機設鬧鐘提醒集合時間。</li>
+                        <li>上車座位與房號拍照記錄，避免拿錯行李。</li>
+                        <li>行程中若需離隊，必須告知導遊並留下聯絡方式。</li>
+                        <li>巴士上保持整潔，垃圾統一帶走。</li>
+                        <li>走木棧道或濕滑區域低頭看路，拍照停下再取景。</li>
+                    </ul>
+                </article>
+                <article class="tip">
+                    <h3>親子旅遊小撇步</h3>
+                    <ul>
+                        <li>阿萌專屬藥品、耳溫槍、娛樂道具別忘了。</li>
+                        <li>交通移動前先帶孩子上洗手間，準備小零食。</li>
+                        <li>景點排隊時玩觀察遊戲，保持耐心。</li>
+                        <li>泡足湯或溫泉後擦乾腳底，避免室內滑倒。</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p>旅程資訊更新日期：2025/09/26｜若行程或時間有調整，請以旅行社最新通知為準。</p>
+            <button class="back-to-top" type="button" aria-label="返回頁面頂部">返回頂部</button>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
